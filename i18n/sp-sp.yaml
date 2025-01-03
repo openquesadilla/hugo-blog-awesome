@@ -3,10 +3,10 @@
   translation: "Home"
   
 - id: "home.recent_posts"
-  translation: "Recent Posts"
+  translation: "Articulos Recientes"
 
 - id: "home.see_all_posts"
-  translation: "See all posts"
+  translation: "Ver todos los Articulos"
 
 ## SINGLE ##
 - id: "single.table_of_contents"
