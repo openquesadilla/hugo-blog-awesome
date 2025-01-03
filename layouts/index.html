@@ -22,10 +22,10 @@
             {{/* Show last 5 posts in reverse date order */}}
             {{ $pagesToShow := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
             {{ $articulos := $pagesToShow.ByDate.Reverse }}
-            {{ range first 5 articulos }}
+            {{ range first 5 $articulos }}
             {{ partial "postCard" . }}
             {{ end }}
-            {{ if gt (len articulos) 5 }}
+            {{ if gt (len $articulos) 5 }}
             <p>
                 {{ range $firstSection := (where .Site.Sections "Section" "in" (first 1 (.Site.Params.mainSections))) }}
                 <a href="{{ $firstSection.Permalink }}">{{ T "home.see_all_posts" }}</a>
